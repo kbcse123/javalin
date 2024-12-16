@@ -18,7 +18,7 @@ public class AppStarter
 
         var app = Javalin
                 .create(javalinConfig -> javalinConfig.registerPlugin(plugin))
-                .start(8443);
+                .start();
         app.get("/", ctx -> ctx.result("Hello World"));
         app.get("/users", UserController.fetchAllUsernames);
         app.get("/users/{id}", UserController.fetchById);

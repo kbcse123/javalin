@@ -5,11 +5,15 @@
   <groupId>com.javalin</groupId>
   <artifactId>javalin-demo</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
   <name>javalin-demo</name>
+    <modules>
+        <module>javalin-jte-htmx</module>
+      <module>javalin-sample-start</module>
+    </modules>
 
 
-  <properties>
+    <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
@@ -17,7 +21,7 @@
     <dependency>
       <groupId>io.javalin</groupId>
       <artifactId>javalin</artifactId>
-      <version>6.3.0</version>
+      <version>6.4.0</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
